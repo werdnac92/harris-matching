@@ -1,0 +1,10 @@
+#-----------------------------------------------------------
+# Vivado v2013.2 (64-bit)
+# Build 272601 by xbuild on Sat Jun 15 11:11:11 MDT 2013
+# Start of session at: Mon Dec  8 17:31:20 2014
+# Process ID: 13135
+# Log file: /home/student/amc379/ece5775/final_project/sw/seam/vivado.log
+# Journal file: /home/student/amc379/ece5775/final_project/sw/seam/vivado.jou
+#-----------------------------------------------------------
+start_gui
+source /home/student/amc379/ece5775/final_project/sw/seam/run.tcl

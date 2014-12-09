@@ -1,0 +1,9 @@
+#!/bin/bash
+
+# Xilinx 
+#Vivado System Edition 2013.2
+export XILINXD_LICENSE_FILE=2100@flex.ece.cornell.edu
+source /opt/xilinx/Vivado/2013.2/settings64.sh
+IDS_VER=6
+source /opt/xilinx/14.$IDS_VER/ISE_DS/settings64.sh
+
