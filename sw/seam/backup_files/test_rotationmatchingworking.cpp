@@ -14,8 +14,8 @@
 
 #include "math.h"
 
-#define MAX_WIDTH  300
-#define MAX_HEIGHT 300
+#define MAX_WIDTH  500
+#define MAX_HEIGHT 500
 
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC3> COLOR;
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC1> GRAY;

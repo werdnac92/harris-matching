@@ -81,7 +81,8 @@ add_files top.cpp
 # Select the files required for the testbench
 add_files -tb test.cpp -cflags "-I$opencv_dir/include -I$opencv_dir/include/opencv"
 add_files -tb opencv_top.cpp -cflags "-I$opencv_dir/include -I$opencv_dir/include/opencv"
-add_files -tb input.bmp
+add_files -tb input1.bmp
+add_files -tb input4.bmp
 
 # Set the name of the solution for this design
 open_solution "solution1"
@@ -92,7 +93,7 @@ create_clock -period "150MHz"
 set_clock_uncertainty 2.0
 
 # Vivado HLS commands for C simulation
-#csim_design
+csim_design
 
 # Vivado HLS commands for C to RTL synthesis
 csynth_design

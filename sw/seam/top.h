@@ -4,8 +4,8 @@
 #include "hls_video.h"
 
 // maximum image size
-#define MAX_WIDTH  1920
-#define MAX_HEIGHT 1080
+#define MAX_WIDTH  150
+#define MAX_HEIGHT 150
 
 // I/O image settings
 #define INPUT_IMAGE              "input.bmp"
@@ -19,7 +19,7 @@ typedef hls::stream<ap_axiu<64,1,1,1> >            AXI_STREAM;
 typedef hls::Mat<MAX_HEIGHT, MAX_WIDTH, HLS_16UC1> GRAYSCALE_IMAGE;
 
 void dut( hls::stream<int>& in_fifo, hls::stream<int>& out_fifo );
-
+/*
 template<int ROWS, int COLS, int T>
 void Stream2Mat( hls::stream<int>& strm, hls::Mat<ROWS, COLS, T>& img )
 {
@@ -60,6 +60,6 @@ void Mat2Stream( hls::Mat<ROWS, COLS, T>& img, hls::stream<int>& strm )
       strm << pix.val[0];
     }
   }
-}
+}*/
 
 #endif

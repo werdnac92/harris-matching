@@ -6,20 +6,183 @@
 ================================================================
 @I [LIC-101] Checked out feature [HLS]
 @I [HLS-10] Running '/opt/xilinx/Vivado_HLS/2013.2/Linux_x86_64/bin/vivado_hls_bin'
-            for user 'amc379' on host 'amdpool-03' (Linux_x86_64 version 2.6.18-371.8.1.el5) on Mon Dec 08 19:35:50 EST 2014
+            for user 'amc379' on host 'amdpool-03' (Linux_x86_64 version 2.6.18-371.8.1.el5) on Tue Dec 09 20:03:22 EST 2014
             in directory '/home/student/amc379/ece5775/final_project/sw/seam'
 @I [HLS-10] Creating and opening project '/home/student/amc379/ece5775/final_project/sw/seam/prj'.
 @I [HLS-10] Adding design file 'top.cpp' to the project.
 @I [HLS-10] Adding test bench file 'test.cpp' to the project.
 @I [HLS-10] Adding test bench file 'opencv_top.cpp' to the project.
-@I [HLS-10] Adding test bench file 'input.bmp' to the project.
+@I [HLS-10] Adding test bench file 'input1.bmp' to the project.
+@I [HLS-10] Adding test bench file 'input4.bmp' to the project.
 @I [HLS-10] Creating and opening solution '/home/student/amc379/ece5775/final_project/sw/seam/prj/solution1'.
 @I [HLS-10] Cleaning up the solution database.
 @I [HLS-10] Setting target device to 'xc7z020clg484-2'
 @I [SYN-201] Setting up clock 'default' with a period of 6.66667ns.
 @I [SYN-201] Setting up clock 'default' with an uncertainty of 2ns.
-@I [HLS-10] Importing test bench file 'input.bmp' ... 
-@W [HLS-40] Cannot find test bench file 'input.bmp'
+   Compiling /home/student/amc379/ece5775/final_project/sw/seam/opencv_top.cpp in debug mode
+   Compiling /home/student/amc379/ece5775/final_project/sw/seam/test.cpp in debug mode
+   Compiling /home/student/amc379/ece5775/final_project/sw/seam/top.cpp in debug mode
+   Generating csim.exe
+FPGA says # of features = 124
+FPGA says # of features = 114
+----------hello4--------
+----------hello5--------
+Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0----------between--------
+Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0Got here 0id1=0 (5,116), id2=67 (3,18), dist=0.645262. 
+id1=1 (11,113), id2=85 (4,110), dist=0.917334. 
+id1=2 (18,32), id2=0 (8,142), dist=0.000002. 
+id1=3 (21,34), id2=70 (9,110), dist=0.575953. 
+id1=4 (22,54), id2=73 (11,115), dist=0.329500. 
+id1=5 (22,67), id2=74 (12,66), dist=0.455790. 
+id1=6 (23,46), id2=72 (12,123), dist=0.596100. 
+id1=7 (25,22), id2=98 (12,125), dist=0.841867. 
+id1=8 (29,54), id2=81 (12,140), dist=0.572532. 
+id1=9 (29,56), id2=76 (13,109), dist=0.884999. 
+id1=10 (30,30), id2=17 (14,128), dist=0.548853. 
+id1=11 (30,67), id2=89 (15,42), dist=0.901669. 
+id1=12 (31,19), id2=75 (18,116), dist=0.968933. 
+id1=13 (31,39), id2=55 (19,112), dist=0.727755. 
+id1=14 (31,60), id2=105 (19,131), dist=0.920906. 
+id1=15 (31,62), id2=17 (20,100), dist=0.789941. 
+id1=16 (32,17), id2=17 (21,109), dist=0.881395. 
+id1=17 (32,66), id2=41 (22,27), dist=0.825372. 
+id1=18 (32,119), id2=82 (24,38), dist=0.891990. 
+id1=19 (33,114), id2=82 (24,40), dist=0.886745. 
+id1=20 (35,3), id2=22 (24,88), dist=0.968592. 
+id1=21 (36,12), id2=79 (25,14), dist=0.886668. 
+id1=22 (36,62), id2=72 (25,81), dist=0.990335. 
+id1=23 (36,113), id2=85 (27,103), dist=0.212794. 
+id1=24 (37,7), id2=75 (29,139), dist=0.936813. 
+id1=25 (37,58), id2=44 (30,121), dist=0.769317. 
+id1=26 (38,18), id2=84 (31,22), dist=0.619748. 
+id1=27 (39,7), id2=83 (31,116), dist=0.895438. 
+id1=28 (40,12), id2=27 (32,97), dist=0.591936. 
+id1=29 (40,122), id2=85 (32,100), dist=0.926641. 
+id1=30 (41,25), id2=18 (32,122), dist=0.895354. 
+id1=31 (41,32), id2=42 (33,112), dist=0.970280. 
+id1=32 (41,110), id2=72 (34,141), dist=0.993824. 
+id1=33 (41,114), id2=97 (36,95), dist=0.977397. 
+id1=34 (42,18), id2=56 (36,118), dist=0.890568. 
+id1=35 (42,123), id2=91 (36,141), dist=0.717387. 
+id1=36 (43,24), id2=99 (38,112), dist=0.787230. 
+id1=37 (43,119), id2=98 (39,99), dist=0.694807. 
+id1=38 (44,15), id2=92 (40,94), dist=0.955875. 
+id1=39 (44,33), id2=26 (42,24), dist=0.815194. 
+id1=40 (44,105), id2=98 (42,30), dist=0.920045. 
+id1=41 (44,108), id2=102 (43,142), dist=0.759638. 
+id1=42 (44,110), id2=61 (47,24), dist=0.865987. 
+id1=43 (44,112), id2=49 (48,102), dist=0.924915. 
+id1=44 (45,28), id2=64 (50,19), dist=0.989012. 
+id1=45 (47,26), id2=105 (52,28), dist=0.917524. 
+id1=46 (48,34), id2=51 (53,22), dist=0.884918. 
+id1=47 (48,106), id2=82 (54,108), dist=0.807700. 
+id1=48 (48,111), id2=107 (55,27), dist=0.406715. 
+id1=49 (50,26), id2=109 (55,42), dist=0.583739. 
+id1=50 (50,111), id2=111 (57,9), dist=0.852873. 
+id1=51 (50,126), id2=82 (57,16), dist=0.829127. 
+id1=52 (53,132), id2=111 (57,58), dist=0.988624. 
+id1=53 (53,134), id2=74 (58,29), dist=0.754635. 
+id1=54 (56,93), id2=113 (59,27), dist=0.653059. 
+id1=55 (60,122), id2=112 (59,38), dist=0.621906. 
+id1=56 (75,113), id2=1 (60,14), dist=0.149555. 
+id1=57 (80,111), id2=59 (60,45), dist=0.977871. 
+id1=58 (83,110), id2=9 (60,54), dist=0.182698. 
+id1=59 (83,116), id2=21 (62,23), dist=0.620027. 
+id1=60 (84,7), id2=0 (62,30), dist=0.000001. 
+id1=61 (84,56), id2=110 (62,43), dist=0.595292. 
+id1=62 (85,79), id2=69 (62,54), dist=0.904397. 
+id1=63 (87,84), id2=89 (63,35), dist=0.895654. 
+id1=64 (87,103), id2=100 (64,54), dist=0.903349. 
+id1=65 (87,123), id2=10 (67,56), dist=0.549735. 
+id1=66 (88,99), id2=7 (84,26), dist=0.815230. 
+id1=67 (88,125), id2=110 (84,28), dist=0.721325. 
+id1=68 (90,111), id2=44 (91,26), dist=0.803947. 
+id1=69 (90,115), id2=39 (97,111), dist=0.797977. 
+id1=70 (90,142), id2=7 (99,111), dist=0.729700. 
+id1=71 (91,107), id2=26 (102,99), dist=0.980565. 
+id1=72 (91,127), id2=4 (103,124), dist=0.576448. 
+id1=73 (92,32), id2=11 (104,131), dist=0.120692. 
+id1=74 (94,99), id2=76 (106,144), dist=0.979985. 
+id1=75 (94,139), id2=34 (107,95), dist=0.732969. 
+id1=76 (96,98), id2=46 (107,106), dist=0.879823. 
+id1=77 (97,92), id2=74 (108,79), dist=0.914809. 
+id1=78 (97,129), id2=35 (111,83), dist=0.702561. 
+id1=79 (98,95), id2=29 (111,87), dist=0.665847. 
+id1=80 (100,32), id2=19 (111,115), dist=0.469474. 
+id1=81 (101,19), id2=17 (111,130), dist=0.215666. 
+id1=82 (101,29), id2=73 (112,31), dist=0.961595. 
+id1=83 (102,86), id2=94 (113,82), dist=0.962740. 
+id1=84 (102,89), id2=29 (114,93), dist=0.760313. 
+id1=85 (103,106), id2=21 (115,30), dist=0.794447. 
+id1=86 (103,110), id2=29 (115,82), dist=0.630642. 
+id1=87 (104,92), id2=29 (115,87), dist=0.586907. 
+id1=88 (104,115), id2=88 (115,137), dist=0.834021. 
+id1=89 (105,7), id2=59 (116,141), dist=0.923831. 
+id1=90 (106,115), id2=29 (117,92), dist=0.575221. 
+id1=91 (107,6), id2=77 (119,41), dist=0.829574. 
+id1=92 (108,104), id2=31 (119,89), dist=0.989149. 
+id1=93 (108,106), id2=10 (119,98), dist=0.733005. 
+id1=94 (108,108), id2=36 (119,106), dist=0.653229. 
+id1=95 (108,110), id2=29 (119,133), dist=0.464767. 
+id1=96 (108,133), id2=24 (119,136), dist=0.488088. 
+id1=97 (111,15), id2=26 (120,32), dist=0.588353. 
+id1=98 (114,91), id2=46 (120,37), dist=0.983705. 
+id1=99 (114,133), id2=65 (122,29), dist=0.835121. 
+id1=100 (116,132), id2=31 (122,101), dist=0.827202. 
+id1=101 (120,25), id2=40 (122,107), dist=0.778157. 
+id1=102 (121,19), id2=46 (123,26), dist=0.884549. 
+id1=103 (122,95), id2=27 (123,31), dist=0.799130. 
+id1=104 (123,130), id2=110 (124,23), dist=0.847686. 
+id1=105 (126,20), id2=42 (124,100), dist=0.590354. 
+id1=106 (130,16), id2=48 (126,105), dist=0.962897. 
+id1=107 (130,25), id2=45 (127,30), dist=0.495989. 
+id1=108 (130,55), id2=52 (127,45), dist=0.455531. 
+id1=109 (131,39), id2=57 (127,99), dist=0.926249. 
+id1=110 (132,25), id2=62 (128,54), dist=0.975690. 
+id1=111 (133,19), id2=46 (129,31), dist=0.892810. 
+id1=112 (134,42), id2=49 (137,43), dist=0.712612. 
+id1=113 (134,52), id2=21 (138,14), dist=0.719705. 
+id1=114 (135,36), id2=11 (14342874,6447714), dist=0.281919. 
+id1=115 (138,14), id2=51 (14408667,6513507), dist=0.618363. 
+id1=116 (138,42), id2=17 (14474460,6579300), dist=0.606518. 
+id1=117 (138,52), id2=72 (14540253,6645093), dist=0.967957. 
+id1=118 (139,7), id2=18 (14606046,6710886), dist=0.939814. 
+id1=119 (140,29), id2=60 (14671839,6776679), dist=0.270886. 
+id1=120 (140,34), id2=84 (116,3), dist=0.915796. 
+id1=121 (141,16), id2=23 (113,4), dist=0.576012. 
+id1=122 (141,22), id2=59 (32,8), dist=0.866756. 
+id1=123 (141,56), id2=110 (34,9), dist=0.849032. 
+quadrant 0 :
+0 has 2 matches
+1 has 1 matches
+2 has 0 matches
+3 has 7 matches
+quadrant 1 :
+0 has 0 matches
+1 has 0 matches
+2 has 6 matches
+3 has 0 matches
+quadrant 2 :
+0 has 12 matches
+1 has 1 matches
+2 has 1 matches
+3 has 0 matches
+quadrant 3 :
+0 has 1 matches
+1 has 11 matches
+2 has 0 matches
+3 has 0 matches
+
+Q0 is top-left, Q1 is top-right, Q2 is bottom-left, Q3 is bottom-right.
+Q0 in img1->Q3 in img2
+Q1 in img1->Q2 in img2
+Q2 in img1->Q0 in img2
+Q3 in img1->Q1 in img2
+WARNING: Hls::stream 'hls::stream<unsigned char>.13' contains leftover data, which may result in RTL simulation hanging.
+WARNING: Hls::stream 'hls::stream<unsigned char>.9' contains leftover data, which may result in RTL simulation hanging.
+@I [SIM-1] CSim done with 0 errors.
+@I [HLS-10] Importing test bench file 'input4.bmp' ... 
+@I [HLS-10] Importing test bench file 'input1.bmp' ... 
 @I [HLS-10] Importing test bench file 'opencv_top.cpp' ... 
 @I [HLS-10] Importing test bench file 'test.cpp' ... 
 @I [HLS-10] Analyzing design file 'top.cpp' ... 
@@ -28,77 +191,77 @@
 @W [SYNCHK-23] hls_video_types.h:276: variable-indexed range selection may cause suboptimal QoR.
 @I [SYNCHK-10] 0 error(s), 1 warning(s).
 @I [HLS-10] Starting code transformations ...
-@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'hls::Duplicate<300, 300, 0, 0>' for pipelining.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-1.1' in function 'hls::Duplicate<150, 150, 0, 0>' for pipelining.
 @I [XFORM-502] Unrolling all loops for pipelining in function 'hls::sr_cast<float, int>'.
-@I [XFORM-502] Unrolling small iteration loop 'Loop-1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' automatically.
-@I [XFORM-502] Unrolling small iteration loop 'Loop-2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' automatically.
-@I [XFORM-502] Unrolling small iteration loop 'Loop-3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' automatically.
-@I [XFORM-502] Unrolling small iteration loop 'Loop-4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' automatically.
-@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-5.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' for pipelining.
-@I [XFORM-501] Unrolling loop 'Loop-1.1' (top.cpp:196) in function 'read_stream' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1.1.1' in function 'hls::Duplicate<300, 300, 0, 0>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1.1.2' in function 'hls::Duplicate<300, 300, 0, 0>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1.1.3' in function 'hls::Duplicate<300, 300, 0, 0>' completely.
+@I [XFORM-502] Unrolling small iteration loop 'Loop-1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' automatically.
+@I [XFORM-502] Unrolling small iteration loop 'Loop-2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' automatically.
+@I [XFORM-502] Unrolling small iteration loop 'Loop-3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' automatically.
+@I [XFORM-502] Unrolling small iteration loop 'Loop-4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' automatically.
+@I [XFORM-502] Unrolling all sub-loops inside loop 'Loop-5.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' for pipelining.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (top.cpp:197) in function 'read_stream' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.1' in function 'hls::Duplicate<150, 150, 0, 0>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.2' in function 'hls::Duplicate<150, 150, 0, 0>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1.3' in function 'hls::Duplicate<150, 150, 0, 0>' completely.
 @I [XFORM-501] Unrolling loop 'Loop-1' in function 'hls::sr_cast<float, int>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'channelloop' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.1.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.5' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.6' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.7' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.8' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-5.1.1.8.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1.1' (top.cpp:95) in function 'hlscomputeHarris' completely.
-@I [XFORM-501] Unrolling loop 'Loop-1.2' (top.cpp:96) in function 'hlscomputeHarris' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'channelloop' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.1.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.2' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.3' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.4' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.5' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.6' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.7' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.8' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-5.1.1.8.1' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.1' (top.cpp:93) in function 'hlscomputeHarris' completely.
+@I [XFORM-501] Unrolling loop 'Loop-1.2' (top.cpp:94) in function 'hlscomputeHarris' completely.
 @I [XFORM-102] Partitioning array 's.val.assign.1' automatically.
 @I [XFORM-102] Partitioning array 's.val.assign.3' automatically.
 @I [XFORM-102] Partitioning array 's.val.assign.5' automatically.
-@I [XFORM-102] Automatically partitioning small array 'image1.data_stream.V' (top.cpp:224) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'grad_x.data_stream.V' (top.cpp:83) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'grad_y.data_stream.V' (top.cpp:84) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'img1_gray1.data_stream.V' (top.cpp:85) completely based on array size.
-@I [XFORM-102] Automatically partitioning small array 'img1_gray2.data_stream.V' (top.cpp:86) completely based on array size.
-@I [XFORM-101] Partitioning array 'kernel.val' (top.cpp:34) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'pixel.val' (top.cpp:192) in dimension 1 completely.
+@I [XFORM-102] Automatically partitioning small array 'image1.data_stream.V' (top.cpp:225) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'grad_x.data_stream.V' (top.cpp:81) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'grad_y.data_stream.V' (top.cpp:82) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'img1_gray1.data_stream.V' (top.cpp:83) completely based on array size.
+@I [XFORM-102] Automatically partitioning small array 'img1_gray2.data_stream.V' (top.cpp:84) completely based on array size.
+@I [XFORM-101] Partitioning array 'kernel.val' (top.cpp:32) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'pixel.val' (top.cpp:193) in dimension 1 completely.
 @I [XFORM-101] Partitioning array 'scl.val'  in dimension 1 completely.
 @I [XFORM-101] Partitioning array 'scl.val.1'  in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'image1.data_stream.V' (top.cpp:224) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'grad_x.data_stream.V' (top.cpp:83) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'grad_y.data_stream.V' (top.cpp:84) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'img1_gray1.data_stream.V' (top.cpp:85) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'img1_gray2.data_stream.V' (top.cpp:86) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'kernel.val.0' (top.cpp:34) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'kernel.val.1' (top.cpp:34) in dimension 1 completely.
-@I [XFORM-101] Partitioning array 'kernel.val.2' (top.cpp:34) in dimension 1 completely.
-@I [XFORM-602] Inlining function 'hlscomputeGradient' into 'hlscomputeHarris' (top.cpp:89) automatically.
-@I [XFORM-602] Inlining function 'read_stream' into 'dut' (top.cpp:226) automatically.
-@I [XFORM-602] Inlining function 'write_stream' into 'dut' (top.cpp:242) automatically.
-@W [XFORM-561] Updating loop lower bound from 0 to 300 for loop 'Loop-0-0' (top.cpp:87) in function 'hlscomputeHarris'.
-@W [XFORM-561] Updating loop lower bound from 0 to 300 for loop 'Loop-0' (top.cpp:87) in function 'hlscomputeHarris'.
-@W [XFORM-561] Updating loop upper bound from 300 to 302 for loop 'Loop-0-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'.
-@W [XFORM-561] Updating loop lower bound from 0 to 302 for loop 'Loop-0-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'.
-@W [XFORM-561] Updating loop upper bound from 300 to 305 for loop 'Loop-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'.
-@W [XFORM-561] Updating loop lower bound from 0 to 305 for loop 'Loop-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'.
+@I [XFORM-101] Partitioning array 'image1.data_stream.V' (top.cpp:225) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'grad_x.data_stream.V' (top.cpp:81) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'grad_y.data_stream.V' (top.cpp:82) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'img1_gray1.data_stream.V' (top.cpp:83) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'img1_gray2.data_stream.V' (top.cpp:84) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel.val.0' (top.cpp:32) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel.val.1' (top.cpp:32) in dimension 1 completely.
+@I [XFORM-101] Partitioning array 'kernel.val.2' (top.cpp:32) in dimension 1 completely.
+@I [XFORM-602] Inlining function 'hlscomputeGradient' into 'hlscomputeHarris' (top.cpp:87) automatically.
+@I [XFORM-602] Inlining function 'read_stream' into 'dut' (top.cpp:227) automatically.
+@I [XFORM-602] Inlining function 'write_stream' into 'dut' (top.cpp:243) automatically.
+@W [XFORM-561] Updating loop lower bound from 0 to 150 for loop 'Loop-0-0' (top.cpp:85) in function 'hlscomputeHarris'.
+@W [XFORM-561] Updating loop lower bound from 0 to 150 for loop 'Loop-0' (top.cpp:85) in function 'hlscomputeHarris'.
+@W [XFORM-561] Updating loop upper bound from 150 to 152 for loop 'Loop-0-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'.
+@W [XFORM-561] Updating loop lower bound from 0 to 152 for loop 'Loop-0-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'.
+@W [XFORM-561] Updating loop upper bound from 150 to 155 for loop 'Loop-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'.
+@W [XFORM-561] Updating loop lower bound from 0 to 155 for loop 'Loop-0' in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::sr_cast<float, int>'... converting 9 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'fmin'... converting 8 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'fmax'... converting 5 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::cordic::atan_range_redux_cordic'... converting 7 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::cordic::atan_range_redux_cordic'... converting 4 basic blocks.
 @I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::cordic::atan_range_redux_cordic'... converting 5 basic blocks.
-@I [XFORM-401] Performing if-conversion on hyperblock from (top.cpp:134) to (top.cpp:138) in function 'hlscomputeHarris'... converting 7 basic blocks.
-@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'... converting 3 basic blocks.
-@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'... converting 13 basic blocks.
-@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'... converting 3 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock from (top.cpp:135) to (top.cpp:139) in function 'hlscomputeHarris'... converting 7 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'... converting 3 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'... converting 13 basic blocks.
+@I [XFORM-401] Performing if-conversion on hyperblock in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'... converting 3 basic blocks.
 @I [XFORM-11] Balancing expressions in function 'fmin'...3 expression(s) balanced.
-@I [XFORM-11] Balancing expressions in function 'hlscomputeHarris' (top.cpp:81)...12 expression(s) balanced.
-@I [XFORM-11] Balancing expressions in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 300, 300, 3, 3>'...16 expression(s) balanced.
+@I [XFORM-11] Balancing expressions in function 'hlscomputeHarris' (top.cpp:79)...12 expression(s) balanced.
+@I [XFORM-11] Balancing expressions in function 'hls::filter_opr<hls::filter2d_kernel, 0, 5, int, int, 150, 150, 3, 3>'...16 expression(s) balanced.
 @I [ANALYSIS-51] Setting 'None' inter dependency for variable 'k_buf_0_val_0' in region (hls_video_imgproc.h:331).
 @I [ANALYSIS-51] Setting 'None' intra dependency for variable 'k_buf_0_val_0' in region (hls_video_imgproc.h:331).
 @I [ANALYSIS-51] Setting 'None' inter dependency for variable 'right_border_buf_0_val_0_0' in region (hls_video_imgproc.h:331).
@@ -112,33 +275,33 @@
 @I [ANALYSIS-51] Setting 'None' inter dependency for variable 'k_buf_0_val_1' in loop (:0).
 @I [ANALYSIS-51] Setting 'None' inter dependency for variable 'k_buf_0_val_2' in loop (:0).
 @I [ANALYSIS-51] Setting 'None' inter dependency for variable 'k_buf_0_val_0' in loop (:0).
-@I [HLS-111] Elapsed time: 61.94 seconds; current memory usage: 185 MB.
+@I [HLS-111] Elapsed time: 28.2 seconds; current memory usage: 174 MB.
 @I [HLS-10] Starting hardware synthesis ...
 @I [HLS-10] Synthesizing 'dut' ...
-@W [SYN-103] Legalizing function name 'filter_opr<filter2d_kernel,0,5,int,int,300,300,3,3>' to 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s'.
+@W [SYN-103] Legalizing function name 'filter_opr<filter2d_kernel,0,5,int,int,150,150,3,3>' to 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s'.
 @I [HLS-10] ----------------------------------------------------------------
-@I [HLS-10] -- Scheduling module 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s' 
+@I [HLS-10] -- Scheduling module 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-61] Pipelining loop 'Loop 1.1'.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 16.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.63 seconds; current memory usage: 187 MB.
+@I [HLS-111] Elapsed time: 0.56 seconds; current memory usage: 176 MB.
 @I [HLS-10] ----------------------------------------------------------------
-@I [HLS-10] -- Exploring micro-architecture for module 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s' 
+@I [HLS-10] -- Exploring micro-architecture for module 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [BIND-100] Starting micro-architecture binding ...
 @I [BIND-101] Performing variable lifetime analysis.
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding resource limited operations ...
 @I [BIND-100] Finished micro-architecture binding.
-@I [HLS-111] Elapsed time: 0.26 seconds; current memory usage: 188 MB.
+@I [HLS-111] Elapsed time: 0.26 seconds; current memory usage: 177 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'fmin' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 0.32 seconds; current memory usage: 188 MB.
+@I [HLS-111] Elapsed time: 0.31 seconds; current memory usage: 177 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'fmin' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -147,7 +310,7 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding resource limited operations ...
 @I [BIND-100] Finished micro-architecture binding.
-@I [HLS-111] Elapsed time: 0.03 seconds; current memory usage: 188 MB.
+@I [HLS-111] Elapsed time: 0.04 seconds; current memory usage: 177 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'hlscomputeHarris' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -155,7 +318,7 @@
 @I [SCHED-61] Pipelining loop 'Loop 1.1'.
 @I [SCHED-61] Pipelining result: Target II: 1, Final II: 1, Depth: 2.
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 1.14 seconds; current memory usage: 191 MB.
+@I [HLS-111] Elapsed time: 1.08 seconds; current memory usage: 180 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'hlscomputeHarris' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -164,13 +327,13 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding resource limited operations ...
 @I [BIND-100] Finished micro-architecture binding.
-@I [HLS-111] Elapsed time: 1.24 seconds; current memory usage: 195 MB.
+@I [HLS-111] Elapsed time: 1.26 seconds; current memory usage: 184 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Scheduling module 'dut' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [SCHED-11] Starting scheduling ...
 @I [SCHED-11] Finished scheduling.
-@I [HLS-111] Elapsed time: 1.05 seconds; current memory usage: 196 MB.
+@I [HLS-111] Elapsed time: 1.04 seconds; current memory usage: 185 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Exploring micro-architecture for module 'dut' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -179,9 +342,9 @@
 @I [BIND-101] Exploring resource sharing.
 @I [BIND-101] Binding resource limited operations ...
 @I [BIND-100] Finished micro-architecture binding.
-@I [HLS-111] Elapsed time: 0.19 seconds; current memory usage: 196 MB.
+@I [HLS-111] Elapsed time: 0.19 seconds; current memory usage: 185 MB.
 @I [HLS-10] ----------------------------------------------------------------
-@I [HLS-10] -- Generating RTL for module 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s' 
+@I [HLS-10] -- Generating RTL for module 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-100] Module generated: dut_mul_8ns_3s_11_3|dut_mul_8ns_3s_11_3_U1.
 @I [RTGEN-100] Module generated: dut_mul_8ns_3ns_11_3|dut_mul_8ns_3ns_11_3_U2.
@@ -189,14 +352,14 @@
 @I [RTGEN-100] Module generated: dut_mul_8ns_3ns_11_3|dut_mul_8ns_3ns_11_3_U4.
 @I [RTGEN-100] Module generated: dut_mul_8ns_3s_11_3|dut_mul_8ns_3s_11_3_U5.
 @I [RTGEN-100] Module generated: dut_mul_8ns_2ns_10_3|dut_mul_8ns_2ns_10_3_U6.
-@I [RTGEN-100] Finished creating RTL model for 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s'.
-@I [HLS-111] Elapsed time: 0.68 seconds; current memory usage: 198 MB.
+@I [RTGEN-100] Finished creating RTL model for 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s'.
+@I [HLS-111] Elapsed time: 0.66 seconds; current memory usage: 187 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'fmin' 
 @I [HLS-10] ----------------------------------------------------------------
 @I [RTGEN-100] Module generated: dut_dcmp_64ns_64ns_1_3|dut_dcmp_64ns_64ns_1_3_U17.
 @I [RTGEN-100] Finished creating RTL model for 'fmin'.
-@I [HLS-111] Elapsed time: 0.87 seconds; current memory usage: 203 MB.
+@I [HLS-111] Elapsed time: 0.83 seconds; current memory usage: 192 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'hlscomputeHarris' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -230,13 +393,13 @@
 @I [RTGEN-100] Module generated: dut_sitodp_64ns_64_9|dut_sitodp_64ns_64_9_U47.
 @I [RTGEN-100] Module generated: dut_sitodp_64s_64_9|dut_sitodp_64s_64_9_U48.
 @I [RTGEN-100] Module generated: dut_dsqrt_64ns_64ns_64_57|dut_dsqrt_64ns_64ns_64_57_U49.
-@I [RTGEN-100] Module generated: dut_mul_32s_9ns_32_5|dut_mul_32s_9ns_32_5_U50.
+@I [RTGEN-100] Module generated: dut_mul_32s_8ns_32_5|dut_mul_32s_8ns_32_5_U50.
 @I [RTGEN-100] Module generated: dut_mul_32s_32s_32_7|dut_mul_32s_32s_32_7_U51.
 @I [RTGEN-100] Module generated: dut_mul_32s_32s_32_7|dut_mul_32s_32s_32_7_U52.
 @I [RTGEN-100] Module generated: dut_mul_32s_32s_32_7|dut_mul_32s_32s_32_7_U53.
-@I [RTGEN-100] Module generated: dut_mul_32s_9ns_32_5|dut_mul_32s_9ns_32_5_U54.
+@I [RTGEN-100] Module generated: dut_mul_32s_8ns_32_5|dut_mul_32s_8ns_32_5_U54.
 @I [RTGEN-100] Finished creating RTL model for 'hlscomputeHarris'.
-@I [HLS-111] Elapsed time: 0.47 seconds; current memory usage: 209 MB.
+@I [HLS-111] Elapsed time: 0.46 seconds; current memory usage: 198 MB.
 @I [HLS-10] ----------------------------------------------------------------
 @I [HLS-10] -- Generating RTL for module 'dut' 
 @I [HLS-10] ----------------------------------------------------------------
@@ -245,14 +408,14 @@
 @I [RTGEN-500] Setting interface mode on function 'dut' to 'ap_ctrl_none'.
 @I [RTGEN-100] Module generated: dut_fptosi_32ns_64_5|dut_fptosi_32ns_64_5_U66.
 @I [RTGEN-100] Finished creating RTL model for 'dut'.
-@I [HLS-111] Elapsed time: 1.73 seconds; current memory usage: 218 MB.
+@I [HLS-111] Elapsed time: 1.68 seconds; current memory usage: 207 MB.
 @I [RTMG-282] Generating pipelined core: 'dut_mul_8ns_3s_11_3_MulnS_0'
 @I [RTMG-282] Generating pipelined core: 'dut_mul_8ns_3ns_11_3_MulnS_1'
 @I [RTMG-282] Generating pipelined core: 'dut_mul_8ns_2s_10_3_MulnS_2'
 @I [RTMG-282] Generating pipelined core: 'dut_mul_8ns_2ns_10_3_MulnS_3'
-@I [RTMG-278] Implementing memory 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s_k_buf_0_val_0_ram' using block RAMs.
-@I [RTMG-278] Implementing memory 'filter_opr_filter2d_kernel_0_5_int_int_300_300_3_3_s_k_buf_0_val_1_ram' using block RAMs.
-@I [RTMG-282] Generating pipelined core: 'dut_mul_32s_9ns_32_5_MulnS_4'
+@I [RTMG-278] Implementing memory 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s_k_buf_0_val_0_ram' using block RAMs.
+@I [RTMG-278] Implementing memory 'filter_opr_filter2d_kernel_0_5_int_int_150_150_3_3_s_k_buf_0_val_1_ram' using block RAMs.
+@I [RTMG-282] Generating pipelined core: 'dut_mul_32s_8ns_32_5_MulnS_4'
 @I [RTMG-282] Generating pipelined core: 'dut_mul_32s_32s_32_7_MulnS_5'
 @I [RTMG-279] Implementing memory 'hlscomputeHarris_gaussian5x5_rom' using auto ROMs.
 @I [RTMG-279] Implementing memory 'hlscomputeHarris_cordic_ctab_table_128_V_rom' using auto ROMs.
@@ -262,5 +425,6 @@
 @I [WSYSC-301] Generating RTL SystemC for 'dut'.
 @I [WVHDL-304] Generating RTL VHDL for 'dut'.
 @I [WVLOG-307] Generating RTL Verilog for 'dut'.
-@I [HLS-112] Total elapsed time: 321.31 seconds; peak memory usage: 218 MB.
+@I [IMPL-8] Exporting the design as a Pcore for EDK.
+@I [HLS-112] Total elapsed time: 289.572 seconds; peak memory usage: 207 MB.
 @I [LIC-101] Checked in feature [HLS]

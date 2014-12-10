@@ -1,8 +1,6 @@
+#include "top.h"
 #include "hls_stream.h"
 #include "hls_video.h"
-
-#define MAX_WIDTH  300
-#define MAX_HEIGHT 300
 
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC3> COLOR;
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC1> GRAY;
@@ -95,7 +93,8 @@ int hlscomputeHarris(GRAY& img1_gray, float harrisImage[MAX_HEIGHT*MAX_WIDTH], f
       grad_x_vec[i]= grad_x.read().val[0];
       grad_y_vec[i]= grad_y.read().val[0];
   }
-  
+  //Use Filter2D
+  //Get rid of floating point
   int gaus_ks = 1;
   const double gaussian5x5[25] =
   {
@@ -105,7 +104,7 @@ int hlscomputeHarris(GRAY& img1_gray, float harrisImage[MAX_HEIGHT*MAX_WIDTH], f
   0.014652, 0.0586081, 0.0952381, 0.0586081, 0.014652, 
   0.003663, 0.014652,  0.025641,  0.014652,  0.003663
   };
-  
+  //Pipeline the loop here
   for (int y = 0; y < MAX_HEIGHT; y++) {
       for (int x = 0; x < MAX_WIDTH; x++) {
           float a = 0;
@@ -117,6 +116,7 @@ int hlscomputeHarris(GRAY& img1_gray, float harrisImage[MAX_HEIGHT*MAX_WIDTH], f
           int imgT= fmax(0, y-gaus_ks);
           int imgB= fmin(MAX_HEIGHT-1, y+gaus_ks);
           
+          //Pipelining, (use line buffers, windowing?)
           for (int i=imgT; i<=imgB; i++){
               for (int j=imgL; j<=imgR; j++){
                   a= a+grad_x_vec[i*MAX_WIDTH+j]*grad_x_vec[i*MAX_WIDTH+j]*gaussian5x5[(gaus_ks-(y-i))*5+gaus_ks-(x-j)];
@@ -131,6 +131,7 @@ int hlscomputeHarris(GRAY& img1_gray, float harrisImage[MAX_HEIGHT*MAX_WIDTH], f
              harrisImage[y*MAX_HEIGHT+x]= (a * c - b * b)/(a + c);
            }
            
+           //Very big
            double ang= atanf((c - a + sqrt((a-c)*(a-c) + 4 * b*b))/(2*b));
            double num= (c - a + sqrt((a-c)*(a-c) + 4 * b*b));
            double denom= 2*b;
