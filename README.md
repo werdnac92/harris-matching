@@ -50,5 +50,5 @@ Importing into ISE:
 Bistreaming in ISE
   1. Hierarchy->xc7z020-1clg484->Regenerate all cores
       - This will take like an hour because we have a lot of crap
-  2. Hie
-      - Because we already have a
+  2. Hierarchy->xillydemo.v->Generate Bitstream
+      - Will take another thousand years
