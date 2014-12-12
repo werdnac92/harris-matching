@@ -99,7 +99,7 @@ csim_design
 csynth_design
 
 # Vivado HLS commands for RTL simulation
-cosim_design
+#cosim_design
 
 # Vivado HLS commands for RTL implementation
 export_design -format pcore -version 1.04.a
