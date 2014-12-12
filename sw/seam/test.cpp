@@ -14,14 +14,18 @@
 
 #include "math.h"
 
+
+
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC3> COLOR;
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_8UC1> GRAY;
 typedef hls::Mat<MAX_HEIGHT,MAX_WIDTH,HLS_32FC1> FLOATIMG;
 typedef hls::Scalar<1, unsigned char> PIXEL;
 
+
+
 //template<HLS_RGB2GRAY, 140, 214, HLS8UC3, HLS_8UC1>;
 //hls::CvtColor<HLS_RGB2GRAY, 140, 214, HLS8UC3, HLS_8UC1>(hls::Mat<ROWS, COLS, SRC_T>& src, hls::Mat<ROWS, COLS, SRC_T>& dst);
-
+IplImage* test_img;
 
 void rotate_image(cv::Mat src, int centerX, int centerY, float rotationAngle, unsigned char feature[25]){
   int rows= MAX_HEIGHT;
@@ -48,6 +52,7 @@ void rotate_image(cv::Mat src, int centerX, int centerY, float rotationAngle, un
         //cv::mat.at(row, col)
         //feature[(y+2)*5 + (x+2)] = src.at<unsigned char>(y, x);
         feature[(y+3)*7 + (x+3)] = new_img_mat.at<unsigned char>(imgY, imgX);
+        //printf("andrew: %u\n", new_img_mat.at<unsigned char>(imgY, imgX));
       }
     }
   }
@@ -120,15 +125,25 @@ int f2i(float x ){
 }
 
 
-int computeHarris(GRAY& fpga_hls_gray, float FPGA_angles[MAX_HEIGHT*MAX_WIDTH], unsigned char FPGA_threshed1[MAX_HEIGHT*MAX_WIDTH]){
+//int computeHarris(GRAY& fpga_hls_gray, float FPGA_angles[MAX_HEIGHT*MAX_WIDTH], unsigned char FPGA_threshed1[MAX_HEIGHT*MAX_WIDTH]){
+int computeHarris(cv::Mat& fpga_hls_gray, float FPGA_angles[MAX_HEIGHT*MAX_WIDTH], unsigned char FPGA_threshed1[MAX_HEIGHT*MAX_WIDTH]){
+
   int           FPGA_numFeatures;
   int rows= MAX_HEIGHT;
   int cols= MAX_WIDTH;
+
+  //IplImage img_gray = cvLoadImage("input1.bmp", CV_LOAD_IMAGE_GRAYSCALE);
+
   cv::Mat fpga_img = cv::imread( "input1.bmp", 1 );
-  float harrisImage[MAX_HEIGHT*MAX_WIDTH];
+  //cv::Mat img = cv::imread( "input1.bmp", 1 );
+
+  //float harrisImage[MAX_HEIGHT*MAX_WIDTH];
 
   COLOR fpga_hls_img(rows, cols);
   cvMat2hlsMat(fpga_img, fpga_hls_img);
+
+  //GRAY gray;
+  //hls::CvtColor<HLS_RGB2GRAY>(fpga_hls_img, gray);
 
   hls::CvtColor<HLS_RGB2GRAY>(fpga_hls_img, fpga_hls_gray);
 
@@ -138,10 +153,48 @@ int computeHarris(GRAY& fpga_hls_gray, float FPGA_angles[MAX_HEIGHT*MAX_WIDTH], 
   //hls::stream<float> to_fpga;
   //hls::stream<float> from_fpga;
 
+  cv::Mat kevin(cols, rows,CV_8U);
+  kevin = cv::imread("input1.bmp",0);
+  unsigned char kev;
+
+  for (int r=0; r<rows; r++) {
+    for (int c=0; c<cols; c++) {
+      //kev = kevin.at<unsigned char>(r,c);
+      //printf("kev: %u\n", kev);
+      //to_fpga << kev;
+      to_fpga << kevin.at<unsigned char>(r,c);
+    }
+  }
+
+
+/*
+  test_img = cvLoadImage("input1.bmp", CV_LOAD_IMAGE_GRAYSCALE);
+  CvScalar pixel;
+
+
+  for (int r=0; r<rows; r++) {
+    for (int c=0; c<cols; c++) {
+
+      pixel = cvGet2D(test_img, r, c);
+      printf("pixel: %i\n", pixel.val[0]);
+      to_fpga << pixel.val[0];
+
+    }
+  }
+*/
+
+/*
+  int temp;
+
   for (int i=0; i<rows*cols; i++){
+    
+    //temp = gray.read().val[0];
+    //to_fpga<<temp;
+    //printf("pixel: %i\n", temp);
     to_fpga<<fpga_hls_gray.read().val[0];
   }
-  
+  */
+
   // from_fpga = threshedHarris1, orientationImage1, numFeatures1
   dut(to_fpga, from_fpga);
 
@@ -174,6 +227,7 @@ int computeHarris(GRAY& fpga_hls_gray, float FPGA_angles[MAX_HEIGHT*MAX_WIDTH], 
 
 
 void import() {
+  /*
   cv::Mat img1_cvmat = cv::imread( "input1.bmp", 1 );
   cv::Mat img2_cvmat = cv::imread( "input4.bmp", 1 );
   int rows= MAX_HEIGHT;
@@ -210,17 +264,41 @@ void import() {
 	cv::Mat gray2 = cv::Mat::zeros(cols, rows,CV_8U);
 	hlsMat2cvMat(img1_gray2, gray1);
 	hlsMat2cvMat(img2_gray2, gray2);
+
+*/
+  int rows= MAX_HEIGHT;
+  int cols= MAX_WIDTH;
+
+  cv::Mat gray1(cols, rows, CV_8U);
+  cv::Mat gray2(cols, rows, CV_8U);
+
+  gray1 = cv::imread("input1.bmp",0);
+  gray2 = cv::imread("input4.bmp",0);
+
+
 	int gray1_vec[rows*cols];
   int gray2_vec[rows*cols];
+  /*
   for (int i = 0; i < rows*cols; i++) {
       gray1_vec[i]= img1_gray4.read().val[0];
       gray2_vec[i]= img2_gray4.read().val[0];
   }
+  */
+  for (int r=0; r<rows; r++) {
+    for (int c=0; c<cols; c++) {
+      gray1_vec[r*cols+c]= gray1.at<unsigned char>(r,c);
+      gray2_vec[r*cols+c]= gray2.at<unsigned char>(r,c);
+    }
+  }
 
   float orientationImage1[rows*cols], orientationImage2[rows*cols];
   unsigned char threshedHarris1[rows*cols], threshedHarris2[rows*cols];
-  int numFeatures1 = computeHarris(img1_gray1, orientationImage1, threshedHarris1);
-  int numFeatures2 = computeHarris(img2_gray1, orientationImage2, threshedHarris2);
+
+  //int numFeatures1 = computeHarris(img1_gray1, orientationImage1, threshedHarris1);
+  //int numFeatures2 = computeHarris(img2_gray1, orientationImage2, threshedHarris2);
+
+  int numFeatures1 = computeHarris(gray1, orientationImage1, threshedHarris1);
+  int numFeatures2 = computeHarris(gray2, orientationImage2, threshedHarris2);
 
   unsigned char featureList1[numFeatures1][49];
   unsigned char featureList2[numFeatures2][49];
@@ -510,6 +588,9 @@ void import() {
 int main( int argc, char** argv )
 {
   import();
+
+  printf("Sizeof int is %i\n", sizeof(int));
+  printf("Sizeof float is %i\n", sizeof(float));
 
   return 0;
 }

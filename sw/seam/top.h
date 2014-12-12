@@ -4,8 +4,8 @@
 #include "hls_video.h"
 
 // maximum image size
-#define MAX_WIDTH  150
-#define MAX_HEIGHT 150
+#define MAX_WIDTH  100
+#define MAX_HEIGHT 100
 
 // I/O image settings
 #define INPUT_IMAGE              "input.bmp"
