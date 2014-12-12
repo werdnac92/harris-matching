@@ -32,7 +32,9 @@ HLS Synthesis:
   vivado_hls -f run.tcl
 
   This generates a project file in sw/seam/prj, with generated verilog files
-  in sw/seam/prj/solution1/syn/verilog/
+  in sw/seam/prj/solution1/impl/verilog/
+  
+  Different steps (cosim, etc.) can be enabled or disabled in run.tcl
 
 Importing into ISE:
   cd sw/seam
@@ -43,4 +45,10 @@ Importing into ISE:
   cd xillinux-eval-zedboard-1.1/verilog
   ise xillydemo.xise &
   
-  in ISE: Project->Add Source. Choose all files (including subfolders) under sw/seam/prj/solution1/syn/verilog/*
+  in ISE: Project->Add Source. Choose all files (including subfolders) under sw/seam/prj/solution1/impl/verilog/*.v and *.xco
+  
+Bistreaming in ISE
+  1. Hierarchy->xc7z020-1clg484->Regenerate all cores
+      - This will take like an hour because we have a lot of crap
+  2. Hierarchy->xillydemo.v->Generate Bitstream
+      - Will take another thousand years
